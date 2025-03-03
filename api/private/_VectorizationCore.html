@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>_VectorizationCore · ITensorsOpenSystems</title><meta name="title" content="_VectorizationCore · ITensorsOpenSystems"/><meta property="og:title" content="_VectorizationCore · ITensorsOpenSystems"/><meta property="twitter:title" content="_VectorizationCore · ITensorsOpenSystems"/><meta name="description" content="Documentation for ITensorsOpenSystems."/><meta property="og:description" content="Documentation for ITensorsOpenSystems."/><meta property="twitter:description" content="Documentation for ITensorsOpenSystems."/><script data-outdated-warner src="../../assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="../.."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="../../assets/documenter.js"></script><script src="../../search_index.js"></script><script src="../../siteinfo.js"></script><script src="../../../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="../../assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="../../assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href="../../index.html">ITensorsOpenSystems</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li><a class="tocitem" href="../../index.html">index</a></li><li><span class="tocitem">api</span><ul><li><a class="tocitem" href="../AnalyticSolutions.html">AnalyticSolutions</a></li><li><a class="tocitem" href="../AutoMPOHermitianConjugate.html">AutoMPOHermitianConjugate</a></li><li><a class="tocitem" href="../ChainMappings.html">ChainMappings</a></li><li><a class="tocitem" href="../GlobalFunctionApproximation.html">GlobalFunctionApproximation</a></li><li><a class="tocitem" href="../HamiltonianBuilding.html">HamiltonianBuilding</a></li><li><a class="tocitem" href="../MatrixConstruction.html">MatrixConstruction</a></li><li><a class="tocitem" href="../QuantumTrajectories.html">QuantumTrajectories</a></li><li><a class="tocitem" href="../SplitVectorization.html">SplitVectorization</a></li><li><a class="tocitem" href="../Superfermions.html">Superfermions</a></li><li><a class="tocitem" href="../Utils.html">Utils</a></li><li><a class="tocitem" href="../Vectorization.html">Vectorization</a></li><li><input class="collapse-toggle" id="menuitem-2-12" type="checkbox" checked/><label class="tocitem" for="menuitem-2-12"><span class="docs-label">private</span><i class="docs-chevron"></i></label><ul class="collapsed"><li><a class="tocitem" href="_InternalUtils.html">_InternalUtils</a></li><li class="is-active"><a class="tocitem" href="_VectorizationCore.html">_VectorizationCore</a></li></ul></li></ul></li><li><span class="tocitem">developers</span><ul><li><a class="tocitem" href="../../developers/code_layout.html">code_layout</a></li><li><a class="tocitem" href="../../developers/guide.html">guide</a></li></ul></li><li><span class="tocitem">getting_started</span><ul><li><a class="tocitem" href="../../getting_started/installation.html">installation</a></li></ul></li><li><span class="tocitem">tutorials</span><ul><li><a class="tocitem" href="../../tutorials/fermions.html">fermions</a></li><li><a class="tocitem" href="../../tutorials/tutorial1.html">tutorial1</a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li><a class="is-disabled">api</a></li><li><a class="is-disabled">private</a></li><li class="is-active"><a href="_VectorizationCore.html">_VectorizationCore</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href="_VectorizationCore.html">_VectorizationCore</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/devel/docs/src/api/private/_VectorizationCore.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="Documentation-for-ITensorsOpenSystems._VectorizationCore"><a class="docs-heading-anchor" href="#Documentation-for-ITensorsOpenSystems._VectorizationCore">Documentation for ITensorsOpenSystems._VectorizationCore</a><a id="Documentation-for-ITensorsOpenSystems._VectorizationCore-1"></a><a class="docs-heading-anchor-permalink" href="#Documentation-for-ITensorsOpenSystems._VectorizationCore" title="Permalink"></a></h1><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.VectorizationError" href="#ITensorsOpenSystems._VectorizationCore.VectorizationError"><code>ITensorsOpenSystems._VectorizationCore.VectorizationError</code></a> — <span class="docstring-category">Type</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><p>Struct for error message with message and site type of the failed vectorization</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L315-L318">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.basespace" href="#ITensorsOpenSystems._VectorizationCore.basespace"><code>ITensorsOpenSystems._VectorizationCore.basespace</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">basespace(idx::ITensors.Index)::String</code></pre><p>Given an index for a vectorized site, returns the name of the site space prior to vectorization</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L502-L506">source</a></section><section><div><pre><code class="language-julia hljs">basespace(m::Union{ITensors.MPS,ITensors.MPO})::String</code></pre><p>Given a Union of ...</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L529-L533">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.build_vectorized_space" href="#ITensorsOpenSystems._VectorizationCore.build_vectorized_space"><code>ITensorsOpenSystems._VectorizationCore.build_vectorized_space</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><p>Builds the vectorized space for a given site type.</p><pre><code class="nohighlight hljs"># Arguments
+- `basespace_name::String`: the name of the base space to vectorize
+- `operators::Vector{String}`: A vector of operators
+- `conserve_qns::Bool`: Should quantum numbers be conserved
+- `conserve_qns_options::String`: If we are to conserve quantum numbers, how to do so, 
+                                    valid options are &quot;difference&quot; or &quot;independent&quot;
+- `additional_parameters::Union{Nothing,Vector{Pair{Symbol,&lt;:Function}}}`: Used to 
+                                    vectorize spaces with variable dimension. Expects a
+                                    list of pairs of keywords and functions which 
+                                    take in a vectorized index and return the value
+                                    of the keyword used to create them
+# Examples
+```jldoctest
+julia&gt; build_vectorized_space(&quot;S=1/2&quot;)
+
+julia&gt; siteind(&quot;S=1/2Vec&quot;)
+(dim=4|id=145|&quot;S=1/2Vec,Site&quot;)
+```</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L46-L68">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.build_vectorized_space_name" href="#ITensorsOpenSystems._VectorizationCore.build_vectorized_space_name"><code>ITensorsOpenSystems._VectorizationCore.build_vectorized_space_name</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">build_vectorized_space_name(tag::String)</code></pre><p>Create the vectorized space name</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L540-L545">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.leftapply" href="#ITensorsOpenSystems._VectorizationCore.leftapply"><code>ITensorsOpenSystems._VectorizationCore.leftapply</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">leftapply(op)
+
+Constructs the vectorized operator corresponding to left multiplication
+by `op` as an autoMPO object
+
+see also: `rightapply`, `leftrightapply`</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/autoMPO_manipulation.jl#L223-L230">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.leftrightapply" href="#ITensorsOpenSystems._VectorizationCore.leftrightapply"><code>ITensorsOpenSystems._VectorizationCore.leftrightapply</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">leftrightapply(leftop,rightop)
+Takes a pair of autoMPO objects on the unvectorized space and constructs the 
+autoMPO object on the vectorized space corresponding to left multiplying the density
+matrix by `leftop` and right multiplying it by `rightop`
+
+# Example
+```julia-repl
+julia&gt; leftop, rightop = OpSum(),OpSum()
+julia&gt;leftop += &quot;σx&quot;, 1
+julia&gt;rightop += &quot;σz&quot;, 1
+
+julia&gt;leftrightapply(leftop,rightop)
+sum(
+    1.0, &quot;σzᵀ⊗σx&quot;, 1
+)
+```
+see also: `leftapply`, `rightapply`, `commutatorapply`, `commutator`, `lindbladdissipator`, `dissipator`</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/autoMPO_manipulation.jl#L5-L23">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.rightapply" href="#ITensorsOpenSystems._VectorizationCore.rightapply"><code>ITensorsOpenSystems._VectorizationCore.rightapply</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">rightapply(op)
+
+Constructs the vectorized operator corresponding to right multiplication
+by `op` as an autoMPO object
+
+see also: `leftapply`, `leftrightapply`</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/autoMPO_manipulation.jl#L235-L242">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.vectorization_sigil" href="#ITensorsOpenSystems._VectorizationCore.vectorization_sigil"><code>ITensorsOpenSystems._VectorizationCore.vectorization_sigil</code></a> — <span class="docstring-category">Constant</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">vectorization_sigil</code></pre><p>Used in site tags to designate the vectorised version of a given site space i.e &quot;Fermion&quot; vectorizes to &quot;FermionVec&quot;, &quot;S=1/2&quot; vectorizes to &quot;S=1/2Vec&quot;,  etc. </p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L20-L26">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.vectorizedop_sigil" href="#ITensorsOpenSystems._VectorizationCore.vectorizedop_sigil"><code>ITensorsOpenSystems._VectorizationCore.vectorizedop_sigil</code></a> — <span class="docstring-category">Constant</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">vectorizedop_sigil</code></pre><p>Used in op names to denote that the op is the vectorized product of two ops on the base space. For example &quot;σxᵀ⊗σy would denote the vectorized operator for left multiplying with σy and right multiplying with σx</p></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L29-L35">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.vectorizer" href="#ITensorsOpenSystems._VectorizationCore.vectorizer"><code>ITensorsOpenSystems._VectorizationCore.vectorizer</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">vectorizer(_dumby;kwargs...)
+vectorizer(space::String;kwargs...)
+
+
+Returns the vectorization tensor, which maps a pair of site indices
+in the vectorized space (with oposite directions), to a single index
+in the vectorized space.
+
+It is recomended to always use this when combining or separating site indices
+to esure that a consitent convention for how the different indices correspond
+is maintained
+
+If the space has conserved quantum numbers the index can be returned with or without
+them using the `conserve_qns` keyword.
+
+For spaces with variable dimension, additional keywords can be provided to spesify
+the dimension of the index returned. In these cases the `sample_idx` keyword can
+also used. This expects a vectorized index and adds the keywords used to create that
+index to the ones passed directly to the function
+
+# Example
+```
+# We create some local site indices and some corrisponding
+# vectoprized indices
+s = siteinds(&quot;S=1/2&quot;, 2)
+sv = siteinds(&quot;S=1/2Vec&quot;,2)
+
+# We create a tensor using those local indices
+t = op(&quot;Sz&quot;, s[1])
+
+# We set the indices on t to match those of the vectorization
+# tensor
+t *= delta(vectorizer_input(&quot;S=1/2&quot;),s[1])
+t *= delta(vectorizer_input(&quot;S=1/2&quot;)&#39;, s[1]&#39;)
+
+# We combine the indices on t into a single 
+# vecotorized index
+t *= vectorizer(&quot;S=1/2&quot;)
+
+# We set the single index on t to be one of
+# our previously created vectorized indices
+t *= delta(vectorizer_output(&quot;s=1/2&quot;),sv[1])
+```
+
+see also: `vectorizer_input`, `vectorizer_output`</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L323-L369">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.vectorizer_input" href="#ITensorsOpenSystems._VectorizationCore.vectorizer_input"><code>ITensorsOpenSystems._VectorizationCore.vectorizer_input</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">vectorizer_input(_dumby;kwargs...)
+vectorizer_input(space::String;kwargs...)
+
+
+
+Returns the input (unvectorized) indices of the vectorization tensor.
+The vectorization tensor has two copies of this index, one primed
+(directed in if there are conserved quantum numbers) corresponding
+to the left hand index of the unvectorized density matrix and one
+unprimed (directed out if there are conserved quantum numbers)
+corresponding to the right hand index of the unvectorized desnity
+matrix. 
+
+If the space has conserved quantum numbers the index can be returned
+with or without them using the `conserve_qns` keyword.
+
+For spaces with variable dimension, additional keywords can be provided
+to spesify the dimension of the index returned. In these cases the
+`sample_idx` keyword can also used. This expects a vectorized index and 
+adds the keywords used to create that index to the ones passed directly 
+to the function
+
+
+# Example
+```
+# We create some local site indices and some corrisponding
+# vectoprized indices
+s = siteinds(&quot;S=1/2&quot;, 2)
+sv = siteinds(&quot;S=1/2Vec&quot;,2)
+
+# We create a tensor using those local indices
+t = op(&quot;Sz&quot;, s[1])
+
+# We set the indices on t to match those of the vectorization
+# tensor
+t *= delta(vectorizer_input(&quot;S=1/2&quot;),s[1])
+t *= delta(vectorizer_input(&quot;S=1/2&quot;)&#39;, s[1]&#39;)
+
+# We combine the indices on t into a single 
+# vecotorized index
+t *= vectorizer(&quot;S=1/2&quot;)
+
+# We set the single index on t to be one of
+# our previously created vectorized indices
+t *= delta(vectorizer_output(&quot;s=1/2&quot;),sv[1])
+```
+
+see also: `vectorizer`, `vectorizer_output`</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L383-L432">source</a></section></article><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="ITensorsOpenSystems._VectorizationCore.vectorizer_output" href="#ITensorsOpenSystems._VectorizationCore.vectorizer_output"><code>ITensorsOpenSystems._VectorizationCore.vectorizer_output</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">vectorizer_output(_dumby;kwargs...)
+vectorizer_output(space::String;kwargs...)
+
+
+Returns the output (vectorized) indices of the vectorization tensor.
+The vectorization tensor has one unprimed (outfacing if quantum numbers are conserved)
+copy of this index, corresponding to the vectorized index. 
+
+If the space has conserved quantum numbers the index can be returned
+with or without them using the `conserve_qns` keyword.
+
+For spaces with variable dimension, additional keywords can be provided
+to spesify the dimension of the index returned. In these cases the
+`sample_idx` keyword can also used. This expects a vectorized index and 
+adds the keywords used to create that index to the ones passed directly 
+to the function
+
+# Example
+```
+# We create some local site indices and some corrisponding
+# vectoprized indices
+s = siteinds(&quot;S=1/2&quot;, 2)
+sv = siteinds(&quot;S=1/2Vec&quot;,2)
+
+# We create a tensor using those local indices
+t = op(&quot;Sz&quot;, s[1])
+
+# We set the indices on t to match those of the vectorization
+# tensor
+t *= delta(vectorizer_input(&quot;S=1/2&quot;),s[1])
+t *= delta(vectorizer_input(&quot;S=1/2&quot;)&#39;, s[1]&#39;)
+
+# We combine the indices on t into a single 
+# vecotorized index
+t *= vectorizer(&quot;S=1/2&quot;)
+
+# We set the single index on t to be one of
+# our previously created vectorized indices
+t *= delta(vectorizer_output(&quot;s=1/2&quot;),sv[1])
+```
+
+see also: `vectorizer_input`, `vectorizer`</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/ITensor-opensystems/ITensorsOpenSystems.jl/blob/2200d0cf7a510815e6213d5ee008d81f358e2c69/src/Vectorization/VectorizationCore/_VectorizationCore.jl#L446-L489">source</a></section></article></article><nav class="docs-footer"><a class="docs-footer-prevpage" href="_InternalUtils.html">« _InternalUtils</a><a class="docs-footer-nextpage" href="../../developers/code_layout.html">code_layout »</a><div class="flexbox-break"></div><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.8.1 on <span class="colophon-date" title="Saturday 1 March 2025 08:35">Saturday 1 March 2025</span>. Using Julia version 1.11.3.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
